@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uber Eats 新手指南 — 外送新手村</title>
+  <meta name="description" content="Uber Eats 外送員完整新手指南：申請流程、良民證辦理、培訓重點、收入試算機、常見問題FAQ。" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    :root { --pink: #06C167; --pink-light: #5de3a6; --pink-lighter: #e8fbf3; --pink-dark: #05a857; }
+    .page-hero { background: linear-gradient(135deg, #f0fff8 0%, #fff 100%); }
+    .page-hero-badge { background: #e8fbf3; color: #06C167; }
+    .section-label { color: #06C167; background: #e8fbf3; }
+    .hero-badge { background: #e8fbf3; color: #06C167; }
+    .stat-box .stat-num { color: #06C167; }
+    .calc-result .result-amount { color: #06C167; }
+    .calc-result { background: linear-gradient(135deg,#e8fbf3,#fff); border-color:#5de3a6; }
+    .calc-input:focus { border-color: #06C167; }
+    .bd-num { color: #06C167 !important; }
+    .referral-banner { background: linear-gradient(135deg,#06C167,#5de3a6); }
+    .highlight-box h4 { color: #06C167; }
+    .highlight-box { background: #e8fbf3; border-color: rgba(6,193,103,.2); }
+    .text-pink { color: #06C167; }
+    .btn-primary { background: #06C167; box-shadow: 0 4px 16px rgba(6,193,103,.35); }
+    .btn-primary:hover { background: #05a857; }
+    .btn-outline { border-color: #06C167; color: #06C167; }
+    .btn-outline:hover { background: #e8fbf3; }
+    .step-circle { background: #06C167; box-shadow: 0 4px 16px rgba(6,193,103,.3); }
+    .faq-question.active { color: #06C167; background: #e8fbf3; }
+    .faq-question.active .faq-icon { background: #06C167; }
+    .card-icon { background: #e8fbf3; }
+    .info-box.pink { background: #e8fbf3; border-color: #06C167; }
+    .anchor-nav a:hover { color: #06C167; border-color: #06C167; }
+    .anchor-nav a.active-anchor { color: #06C167; border-color: #06C167; }
+    .range-val { background: #e8fbf3; color: #06C167; }
+    input[type=range] { accent-color: #06C167; }
+    .doc-item.required::after { background: #ffebee; color: #c62828; }
+    .exam-q-num { background: #06C167; }
+    .footer-col ul li a:hover { color: #06C167; }
+    .nav-menu li a:hover, .nav-menu li a.active { background: #e8fbf3; color: #06C167; }
+    .nav-logo { color: #06C167; }
+  </style>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/hero-scooter.svg" alt="" class="logo-icon-img" /> 外送新手村
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="選單">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="index.html#compare">平台比較</a></li>
+      <li><a href="foodpanda.html">🐼 foodpanda</a></li>
+      <li><a href="ubereats.html" class="active">🟢 Uber Eats</a></li>
+      <li><a href="goodbehavior.html">📋 良民證</a></li>
+      <li><a href="equipment.html">🎒 外送設備</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ========== PAGE HERO ========== -->
+<section class="page-hero ue-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">首頁</a>
+      <span>›</span>
+      <span>Uber Eats 新手指南</span>
+    </div>
+    <div class="page-hero-badge">🟢 Uber Eats 外送員</div>
+    <h1>Uber Eats<br>新手完整指南</h1>
+    <p style="margin-top:12px;">從申請、良民證辦理到第一筆收入，Uber Eats 完整 6 步驟 + 培訓重點 + 收入試算，讓你順利通過審核。</p>
+    <div style="margin-top:16px; background:rgba(6,193,103,.12); border:1px solid rgba(6,193,103,.3); border-radius:10px; padding:14px 18px; display:inline-block;">
+      <div style="font-size:.82rem; font-weight:700; color:#06C167; margin-bottom:6px;">🔥 2026年3月限時新手獎勵</div>
+      <div style="font-size:.9rem; color:#1a1a1a;">雙北地區最高 <strong style="color:#06C167; font-size:1.1rem;">NT$25,100</strong> 新手開通獎勵金</div>
+      <div style="font-size:.8rem; color:#555; margin-top:4px;">桃竹苗/台中/雲嘉南/高屏最高 NT$10,100 ｜ 活動至 2026/3/31</div>
+    </div>
+    <div style="margin-top:24px; display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="https://www.uber.com/signup/drive/deliver/?invite_code=zjgzrvuzdhum" target="_blank" class="btn btn-primary">
+        🟢 立即申請 Uber Eats
+      </a>
+      <a href="#flow" class="btn btn-outline">查看申請流程</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ANCHOR NAV ========== -->
+<div class="anchor-nav">
+  <div class="container">
+    <a href="#flow">📍 申請流程</a>
+    <a href="#docs">📄 所需文件</a>
+    <a href="#training">🎓 培訓重點</a>
+    <a href="#calculator">💰 收入試算</a>
+    <a href="#bonus">🎁 獎金資訊</a>
+    <a href="#faq">❓ 常見問題</a>
+  </div>
+</div>
+
+<!-- ========== STATS ========== -->
+<section class="section-sm" style="background:#fff;">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-num" style="font-size:1.4rem;">最高$25,100</div>
+        <div class="stat-label">🔥 雙北新手獎勵金（3月）</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">$400/hr</div>
+        <div class="stat-label">台北市餐期時薪</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">18歲</div>
+        <div class="stat-label">最低申請年齡</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">3種</div>
+        <div class="stat-label">腳踏車/機車/汽車</div>
+      </div>
+    </div>
+
+    <div class="info-box warning" style="margin-top:8px;">
+      <div class="info-box-icon">⚠️</div>
+      <div class="info-box-text">
+        <strong>良民證注意：</strong>機車、腳踏車申請 Uber Eats 都需要提供<strong>警察刑事紀錄證明書（良民證）</strong>。費用每份 NT$100，約 2 個工作天取件。
+        <a href="goodbehavior.html" style="color:#06C167; font-weight:700;">→ 查看良民證辦理教學</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FLOW ========== -->
+<section class="section" id="flow" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-title-block">
+      <div class="section-label">申請流程</div>
+      <h2 class="section-title">Uber Eats 申請 6 步驟</h2>
+      <p class="section-subtitle">Uber Eats 審核相對嚴格，需要背景調查，但流程清楚，耐心等待即可。</p>
+    </div>
+
+    <!-- 步驟圖 SVG -->
+    <div style="overflow-x:auto; margin-bottom:40px;">
+      <svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" style="width:100%; min-width:600px; display:block;">
+        <line x1="100" y1="70" x2="220" y2="70" stroke="#06C167" stroke-width="3"/>
+        <line x1="260" y1="70" x2="380" y2="70" stroke="#06C167" stroke-width="3"/>
+        <line x1="420" y1="70" x2="540" y2="70" stroke="#06C167" stroke-width="3"/>
+        <line x1="580" y1="70" x2="700" y2="70" stroke="#06C167" stroke-width="3"/>
+        <line x1="740" y1="70" x2="860" y2="70" stroke="#06C167" stroke-width="3"/>
+        <polygon points="222,64 232,70 222,76" fill="#06C167"/>
+        <polygon points="382,64 392,70 382,76" fill="#06C167"/>
+        <polygon points="542,64 552,70 542,76" fill="#06C167"/>
+        <polygon points="702,64 712,70 702,76" fill="#06C167"/>
+        <polygon points="862,64 872,70 862,76" fill="#06C167"/>
+
+        <circle cx="65" cy="70" r="34" fill="#06C167"/>
+        <text x="65" y="60" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Noto Sans TC,sans-serif">STEP</text>
+        <text x="65" y="83" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Noto Sans TC,sans-serif">1</text>
+        <text x="65" y="120" text-anchor="middle" fill="#333" font-size="13" font-weight="700" font-family="Noto Sans TC,sans-serif">線上申請</text>
+        <text x="65" y="138" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">填寫資料</text>
+        <text x="65" y="152" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">選擇車種</text>
+
+        <circle cx="242" cy="70" r="34" fill="#06C167"/>
+        <text x="242" y="60" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Noto Sans TC,sans-serif">STEP</text>
+        <text x="242" y="83" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Noto Sans TC,sans-serif">2</text>
+        <text x="242" y="120" text-anchor="middle" fill="#333" font-size="13" font-weight="700" font-family="Noto Sans TC,sans-serif">上傳文件</text>
+        <text x="242" y="138" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">良民證、身分證</text>
+        <text x="242" y="152" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">行照、駕照</text>
+
+        <circle cx="402" cy="70" r="34" fill="#06C167"/>
+        <text x="402" y="60" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Noto Sans TC,sans-serif">STEP</text>
+        <text x="402" y="83" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Noto Sans TC,sans-serif">3</text>
+        <text x="402" y="120" text-anchor="middle" fill="#333" font-size="13" font-weight="700" font-family="Noto Sans TC,sans-serif">文件審核</text>
+        <text x="402" y="138" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">上傳後 24–48</text>
+        <text x="402" y="152" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">小時完成審核</text>
+
+        <circle cx="562" cy="70" r="34" fill="#05a857"/>
+        <text x="562" y="60" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Noto Sans TC,sans-serif">STEP</text>
+        <text x="562" y="83" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Noto Sans TC,sans-serif">4</text>
+        <text x="562" y="120" text-anchor="middle" fill="#333" font-size="13" font-weight="700" font-family="Noto Sans TC,sans-serif">四大課程</text>
+        <text x="562" y="138" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">測驗須達</text>
+        <text x="562" y="152" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">90% 以上</text>
+
+        <circle cx="722" cy="70" r="34" fill="#05a857"/>
+        <text x="722" y="60" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Noto Sans TC,sans-serif">STEP</text>
+        <text x="722" y="83" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Noto Sans TC,sans-serif">5</text>
+        <text x="722" y="120" text-anchor="middle" fill="#333" font-size="13" font-weight="700" font-family="Noto Sans TC,sans-serif">購買保溫袋</text>
+        <text x="722" y="138" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">商城指定款</text>
+        <text x="722" y="152" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">或自備合規袋</text>
+
+        <circle cx="882" cy="70" r="34" fill="#047040"/>
+        <text x="882" y="60" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Noto Sans TC,sans-serif">STEP</text>
+        <text x="882" y="83" text-anchor="middle" fill="white" font-size="20" font-weight="900" font-family="Noto Sans TC,sans-serif">6</text>
+        <text x="882" y="120" text-anchor="middle" fill="#333" font-size="13" font-weight="700" font-family="Noto Sans TC,sans-serif">帳號開通</text>
+        <text x="882" y="138" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">3個工作天</text>
+        <text x="882" y="152" text-anchor="middle" fill="#777" font-size="10" font-family="Noto Sans TC,sans-serif">（不含假日）</text>
+      </svg>
+    </div>
+
+    <div class="highlight-box">
+      <h4>🔑 Uber Eats 申請注意事項</h4>
+      <ul style="font-size:.9rem; color:var(--text-sub); margin-top:8px; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:6px;">
+        <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0; color:#06C167;">✓</span><strong>機車和腳踏車都需要良民證</strong>（三個月內核發）</li>
+        <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0; color:#06C167;">✓</span>文件上傳後 <strong>24–48 小時</strong>完成審核</li>
+        <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0; color:#06C167;">✓</span>四大課程線上測驗須 <strong>90% 以上</strong>才通過</li>
+        <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0; color:#06C167;">✓</span>完成所有步驟後，<strong>3 個工作天（不含假日）</strong>帳號開通</li>
+        <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0; color:#06C167;">✓</span>強制險：接受電子截圖或小黃卡，<strong>不接受投保收據</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DOCS ========== -->
+<section class="section" id="docs" style="background:#fff;">
+  <div class="container">
+    <div class="section-title-block">
+      <div class="section-label">所需文件</div>
+      <h2 class="section-title">申請 Uber Eats 需要的文件</h2>
+    </div>
+
+    <div class="grid-2" style="gap:28px; align-items:start;">
+      <div>
+        <h3 style="font-size:1rem; font-weight:700; margin-bottom:16px; color:#06C167;">🏍️ 機車外送員</h3>
+        <div class="doc-checklist">
+          <div class="doc-item required"><span class="doc-icon">🪪</span> 身分證正面</div>
+          <div class="doc-item required"><span class="doc-icon">📋</span> 良民證（三個月內核發）</div>
+          <div class="doc-item required"><span class="doc-icon">📄</span> 機車行照</div>
+          <div class="doc-item required"><span class="doc-icon">🪪</span> 機車駕照</div>
+          <div class="doc-item required"><span class="doc-icon">🛡️</span> 機車強制險（電子截圖或小黃卡；不接受投保收據）</div>
+          <div class="doc-item required"><span class="doc-icon">🤳</span> 個人大頭照（不可濾鏡/修圖）</div>
+        </div>
+        <div class="info-box warning" style="margin-top:12px;">
+          <div class="info-box-icon">⚠️</div>
+          <div class="info-box-text">
+            <strong>注意事項：</strong><ul style="margin-top:6px; padding-left:0; list-style:none;">
+              <li style="padding:2px 0 2px 16px; position:relative;"><span style="position:absolute;left:0;">•</span>行照的「車輛種類」需與駕照「駕照種類」相符（如「重型機車」）</li>
+              <li style="padding:2px 0 2px 16px; position:relative;"><span style="position:absolute;left:0;">•</span>強制險車牌號碼需與行照一致</li>
+              <li style="padding:2px 0 2px 16px; position:relative;"><span style="position:absolute;left:0;">•</span>良民證有效期限：申請日起三個月內</li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top:16px;">
+          <a href="goodbehavior.html" class="btn btn-primary btn-sm">📋 良民證怎麼辦？點這裡</a>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:1rem; font-weight:700; margin-bottom:16px; color:#06C167;">🚲 腳踏車外送員</h3>
+        <div class="doc-checklist">
+          <div class="doc-item required"><span class="doc-icon">🪪</span> 身分證正面</div>
+          <div class="doc-item required"><span class="doc-icon">📋</span> 良民證（三個月內核發）</div>
+          <div class="doc-item required"><span class="doc-icon">📝</span> 團體傷害險-投保同意書</div>
+          <div class="doc-item required"><span class="doc-icon">🤳</span> 個人大頭照</div>
+        </div>
+        <div class="info-box info" style="margin-top:12px;">
+          <div class="info-box-icon">🚲</div>
+          <div class="info-box-text">腳踏車<strong>不需要駕照、行照、強制險</strong>，但同樣需要良民證。是機車文件還沒備齊前的好選擇。</div>
+        </div>
+        <div class="info-box warning" style="margin-top:8px;">
+          <div class="info-box-icon">📦</div>
+          <div class="info-box-text"><strong>保溫袋：</strong>需從 Uber Eats 外送合作夥伴商城購買指定款式，或自備合格保溫袋（台北市需標示 Uber Eats 名稱）。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TRAINING ========== -->
+<section class="section" id="training" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-title-block">
+      <div class="section-label">培訓重點</div>
+      <h2 class="section-title">四大課程 + 線上測驗重點整理</h2>
+      <p class="section-subtitle">Uber Eats 需閱讀四大課程（約 4 小時），並通過線上測驗，<strong>答題正確率需達 90% 以上</strong>，才具備帳號開通資格。</p>
+    </div>
+
+    <div style="background:#fff; border-radius:var(--radius-md); border:1px solid #e0e0e0; padding:28px; margin-bottom:28px;">
+      <h4 style="font-size:.95rem; font-weight:800; margin-bottom:16px; color:#06C167;">📚 四大必修課程（各約 1 小時）</h4>
+      <div class="grid-4" style="gap:12px;">
+        <div style="background:#e8fbf3; border-radius:var(--radius-sm); padding:14px; text-align:center;">
+          <div style="font-size:1.5rem; margin-bottom:8px;">🍱</div>
+          <div style="font-size:.88rem; font-weight:700;">食品安全</div>
+        </div>
+        <div style="background:#e8fbf3; border-radius:var(--radius-sm); padding:14px; text-align:center;">
+          <div style="font-size:1.5rem; margin-bottom:8px;">🦺</div>
+          <div style="font-size:.88rem; font-weight:700;">職業安全</div>
+        </div>
+        <div style="background:#e8fbf3; border-radius:var(--radius-sm); padding:14px; text-align:center;">
+          <div style="font-size:1.5rem; margin-bottom:8px;">🚦</div>
+          <div style="font-size:.88rem; font-weight:700;">交通安全</div>
+        </div>
+        <div style="background:#e8fbf3; border-radius:var(--radius-sm); padding:14px; text-align:center;">
+          <div style="font-size:1.5rem; margin-bottom:8px;">📱</div>
+          <div style="font-size:.88rem; font-weight:700;">平台指引</div>
+        </div>
+      </div>
+      <div class="info-box warning" style="margin-top:16px; margin-bottom:0;">
+        <div class="info-box-icon">⚠️</div>
+        <div class="info-box-text">
+          <strong>測驗規定：</strong>閱讀完四大課程後，進行 Uber Eats 線上測驗，<strong>答題正確率需達 90% 以上（含）</strong>才算通過。未達標可重考，但請認真閱讀課程內容，而非猜答案。<br>
+          <strong>入口：</strong>夥伴端 App → 左上角選單 → 收件匣 → 開啟【通知】完成外送合作夥伴課程 → 點擊「立即開始」
+        </div>
+      </div>
+    </div>
+
+    <div class="exam-grid">
+
+      <div class="exam-card">
+        <div class="exam-q-num green">重點 01 — 接單流程</div>
+        <div class="exam-q">收到訂單通知後，Uber Eats 外送員應該怎麼做？</div>
+        <div class="exam-options">
+          <div class="exam-option">A. 等確認地址後再出發</div>
+          <div class="exam-option correct">B. 點擊接受訂單，立即前往餐廳取餐</div>
+          <div class="exam-option">C. 先評估距離再決定要不要接</div>
+          <div class="exam-option">D. 等 5 分鐘再接</div>
+        </div>
+        <div class="exam-explain">收到訂單通知後應盡快點擊接受，並立即導航前往餐廳。拒絕訂單過多會影響你的接單評分。</div>
+      </div>
+
+      <div class="exam-card">
+        <div class="exam-q-num green">重點 02 — 評分系統</div>
+        <div class="exam-q">Uber Eats 外送員的評分主要由哪些因素決定？</div>
+        <div class="exam-options">
+          <div class="exam-option">A. 只看送達速度</div>
+          <div class="exam-option">B. 只看顧客評分</div>
+          <div class="exam-option correct">C. 顧客評分、準時率、接單率、取消率</div>
+          <div class="exam-option">D. 只看接單量</div>
+        </div>
+        <div class="exam-explain">Uber Eats 使用多項指標綜合評估外送員：顧客評分（5星）、準時送達率、接單接受率、以及完成率（取消率的反面）。</div>
+      </div>
+
+      <div class="exam-card">
+        <div class="exam-q-num green">重點 03 — 食安規範</div>
+        <div class="exam-q">在餐廳等待取餐時，外送員的正確行為是？</div>
+        <div class="exam-options">
+          <div class="exam-option">A. 可以隨意翻看餐點確認</div>
+          <div class="exam-option correct">B. 禮貌告知餐廳人員訂單號，等待並確認包裝完整</div>
+          <div class="exam-option">C. 若等超過 5 分鐘就取消</div>
+          <div class="exam-option">D. 自行添加餐點確保顧客滿意</div>
+        </div>
+        <div class="exam-explain">在餐廳應禮貌等候，確認餐點和訂單一致、包裝密封完整。若等待時間過長，透過 App 回報，不要自行取消。</div>
+      </div>
+
+      <div class="exam-card">
+        <div class="exam-q-num green">重點 04 — 送達確認</div>
+        <div class="exam-q">顧客不在家、無法送達時，應該怎麼處理？</div>
+        <div class="exam-options">
+          <div class="exam-option">A. 直接棄置在門口離開</div>
+          <div class="exam-option">B. 吃掉或帶走</div>
+          <div class="exam-option correct">C. 透過 App 聯繫顧客，依 App 指示處理（放門口、等待或退回）</div>
+          <div class="exam-option">D. 送回餐廳退款</div>
+        </div>
+        <div class="exam-explain">無接觸送達是選項之一。若顧客設定了「放門口」，照做並拍照存證。若無指示，透過 App 聯繫，無法聯繫再依平台指示處理。</div>
+      </div>
+
+      <div class="exam-card">
+        <div class="exam-q-num green">重點 05 — 尖峰獎勵</div>
+        <div class="exam-q">Uber Eats 的尖峰時段獎勵（Surge）是如何運作的？</div>
+        <div class="exam-options">
+          <div class="exam-option">A. 只要上線就有</div>
+          <div class="exam-option correct">B. 在需求高但外送員少的區域和時段，系統自動給予加成</div>
+          <div class="exam-option">C. 需要手動申請</div>
+          <div class="exam-option">D. 只有特定城市有</div>
+        </div>
+        <div class="exam-explain">Surge 加成是動態調整的，在外送需求高且外送員不足的地區和時段自動觸發。App 地圖上會以顏色標示熱點區域，前往熱點可提高收入。</div>
+      </div>
+
+      <div class="exam-card">
+        <div class="exam-q-num green">重點 06 — 隱私保護</div>
+        <div class="exam-q">顧客完成訂單後，外送員取得的顧客電話號碼是？</div>
+        <div class="exam-options">
+          <div class="exam-option">A. 顧客的真實電話，可以保存</div>
+          <div class="exam-option correct">B. 平台產生的一次性遮罩號碼，訂單完成後失效</div>
+          <div class="exam-option">C. 顧客的公司電話</div>
+          <div class="exam-option">D. 沒有電話，只能用 App 內訊息</div>
+        </div>
+        <div class="exam-explain">Uber Eats 使用號碼遮罩技術保護顧客隱私，外送員撥打的是平台提供的虛擬號碼，訂單結束後自動失效，無法再聯繫顧客。</div>
+      </div>
+
+      <div class="exam-card">
+        <div class="exam-q-num green">重點 07 — 事故處理</div>
+        <div class="exam-q">接單途中遇到機車故障，應該如何處理？</div>
+        <div class="exam-options">
+          <div class="exam-option">A. 繼續推車送達</div>
+          <div class="exam-option correct">B. 透過 App 聯繫支援，說明無法完成，由平台安排處理</div>
+          <div class="exam-option">C. 打電話給顧客解釋</div>
+          <div class="exam-option">D. 找計程車代送</div>
+        </div>
+        <div class="exam-explain">遇到無法完成訂單的突發狀況，應立即透過 App 客服回報，平台會協助處理訂單並通知顧客，不需要自行解決。</div>
+      </div>
+
+      <div class="exam-card">
+        <div class="exam-q-num green">重點 08 — 新手衝刺</div>
+        <div class="exam-q">Uber Eats 新手衝刺獎勵（Quests）是什麼？</div>
+        <div class="exam-options">
+          <div class="exam-option">A. 自動給所有人的固定獎金</div>
+          <div class="exam-option correct">B. 在規定時間內完成指定單數，可獲得額外獎勵金</div>
+          <div class="exam-option">C. 只有評分 5 星才能參加</div>
+          <div class="exam-option">D. 需要每月申請</div>
+        </div>
+        <div class="exam-explain">Quests 是 Uber Eats 的任務制獎勵，例如「本週完成 25 單，獲得 NT$400 獎勵」。新手期間任務目標通常較低，獎金比例高，要善加利用！</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CALCULATOR ========== -->
+<section class="section" id="calculator" style="background:#fff;">
+  <div class="container">
+    <div class="section-title-block">
+      <div class="section-label">收入試算</div>
+      <h2 class="section-title">預估你的 Uber Eats 月收入</h2>
+      <p class="section-subtitle">Uber Eats 在市區尖峰時段的外送費通常高於平均，善用 Surge 加成可以大幅提升時薪。</p>
+    </div>
+
+    <div class="calculator-box" id="ue-calc">
+      <div class="calc-form">
+        <div class="calc-group">
+          <label class="calc-label">
+            ⏱️ 每週工作時數
+            <span class="tip">（建議 20-40 小時）</span>
+          </label>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:6px;">
+            <input type="range" id="ue-hours" class="calc-input" min="5" max="60" value="25" step="5" style="flex:1; accent-color:#06C167;">
+            <span class="range-val" id="ue-hours-val" style="background:#e8fbf3;color:#06C167;">25 小時</span>
+          </div>
+          <div class="range-labels"><span>5h</span><span>30h</span><span>60h</span></div>
+        </div>
+
+        <div class="calc-group">
+          <label class="calc-label">
+            📦 每小時接單數
+            <span class="tip">（新手 1-2 單，熟手 2-3 單）</span>
+          </label>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:6px;">
+            <input type="range" id="ue-orders" class="calc-input" min="1" max="4" value="2" step="0.5" style="flex:1; accent-color:#06C167;">
+            <span class="range-val" id="ue-orders-val" style="background:#e8fbf3;color:#06C167;">2 單</span>
+          </div>
+          <div class="range-labels"><span>1單</span><span>2.5單</span><span>4單</span></div>
+        </div>
+
+        <div class="calc-group">
+          <label class="calc-label">
+            💵 平均每單外送費
+            <span class="tip">（市區約 NT$60–90）</span>
+          </label>
+          <div class="calc-input-wrap">
+            <input type="number" id="ue-avg-fee" class="calc-input" placeholder="例：70" min="30" max="200" value="70">
+            <span class="unit">元</span>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <label class="calc-label">
+            ⚡ Surge 加成比例
+            <span class="tip">（尖峰時段約 15-30%）</span>
+          </label>
+          <div class="calc-input-wrap">
+            <input type="number" id="ue-boost" class="calc-input" placeholder="例：20" min="0" max="100" value="20">
+            <span class="unit">%</span>
+          </div>
+        </div>
+
+        <div class="calc-group full">
+          <button id="ue-calc-btn" class="btn btn-primary btn-calc">
+            🧮 計算預估月收入
+          </button>
+        </div>
+      </div>
+
+      <div class="calc-result green-result" id="ue-result" style="display:none;">
+        <div class="result-label">預估月收入</div>
+        <div class="result-amount green" id="ue-monthly-income">NT$0</div>
+        <div class="result-note" id="ue-annual-note">年收入約 NT$0</div>
+        <div class="calc-breakdown">
+          <div class="calc-breakdown-item">
+            <div class="bd-num green" id="ue-weekly-orders">0 單</div>
+            <div class="bd-label">每週接單數</div>
+          </div>
+          <div class="calc-breakdown-item">
+            <div class="bd-num green" id="ue-weekly-income">$0</div>
+            <div class="bd-label">每週收入（含Surge）</div>
+          </div>
+          <div class="calc-breakdown-item">
+            <div class="bd-num green">×4.3</div>
+            <div class="bd-label">週數換算月</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box tip" style="margin-top:24px;">
+      <div class="info-box-icon">💡</div>
+      <div class="info-box-text">
+        <strong>提升收入技巧：</strong>Uber Eats 在午晚餐尖峰、下雨天、節假日等高需求時段會觸發 Surge 加成，外送費可能提高 30–50%。善用 App 地圖的熱點顯示，在高需求區域待命，是提升時薪的最佳策略。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BONUS ========== -->
+<section class="section" id="bonus" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-title-block">
+      <div class="section-label">獎金資訊</div>
+      <h2 class="section-title">🔥 2026年3月限時新手獎勵</h2>
+      <p class="section-subtitle">現在加入 Uber Eats 是最佳時機！本月新手開通獎勵金創新高，雙北最高 NT$25,100！</p>
+    </div>
+
+    <!-- 主打活動 Banner -->
+    <div style="background:linear-gradient(135deg,#1c1c1c,#2d2d2d); border-radius:var(--radius-lg); padding:36px; color:#fff; margin-bottom:32px; position:relative; overflow:hidden;">
+      <div style="position:absolute; top:-40px; right:-40px; width:200px; height:200px; background:radial-gradient(circle, rgba(6,193,103,.2), transparent 70%); border-radius:50%;"></div>
+      <div style="font-size:.8rem; font-weight:700; color:#06C167; letter-spacing:.1em; text-transform:uppercase; margin-bottom:12px;">🏁 稱霸台北市餐期</div>
+      <div style="font-size:1.8rem; font-weight:900; margin-bottom:8px;">台北市送單期間</div>
+      <div style="display:flex; gap:24px; flex-wrap:wrap; margin-bottom:20px;">
+        <div>
+          <div style="font-size:2.5rem; font-weight:900; color:#06C167;">NT$400<span style="font-size:1rem;">/小時</span></div>
+          <div style="font-size:.82rem; opacity:.7;">餐期時段（11-13, 17-20）</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem; font-weight:900; color:#5de3a6;">NT$350<span style="font-size:1rem;">/小時</span></div>
+          <div style="font-size:.82rem; opacity:.7;">非餐期時段</div>
+        </div>
+      </div>
+      <div style="font-size:.78rem; opacity:.55;">※ 以上為2026年台北市全體外送合作夥伴的平均數據，個人數額因接單量等因素而異</div>
+    </div>
+
+    <!-- 3月活動表格 -->
+    <h3 style="font-size:1.1rem; font-weight:800; margin-bottom:16px;">📋 2026年3月新手開通獎勵（依地區）</h3>
+    <div class="compare-wrap" style="margin-bottom:32px;">
+      <table class="compare-table" style="min-width:500px;">
+        <thead>
+          <tr>
+            <th>地區</th>
+            <th class="col-ue">最高獎勵金</th>
+            <th>活動期間</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>🔥 雙北（台北市＋新北市）</strong></td>
+            <td style="color:#06C167; font-weight:900; font-size:1.1rem;">NT$25,100</td>
+            <td>2026/3/1–3/31</td>
+          </tr>
+          <tr>
+            <td>桃園、竹苗、台中、雲嘉南、高雄</td>
+            <td style="color:#06C167; font-weight:700;">NT$10,100</td>
+            <td>2026/3/1–3/31</td>
+          </tr>
+          <tr>
+            <td>推薦好友獎勵（全台各區）</td>
+            <td style="color:#06C167; font-weight:700;">最高 NT$12,000/人</td>
+            <td>2026/3/1–3/31</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 雙北詳細任務拆解 -->
+    <h3 style="font-size:1.1rem; font-weight:800; margin-bottom:16px;">🗺️ 雙北 NT$25,100 怎麼拿？</h3>
+    <div class="grid-3" style="margin-bottom:32px;">
+      <div class="card" style="border-top:3px solid #06C167;">
+        <div class="card-icon green" style="font-size:1.5rem;">📅</div>
+        <div class="card-title">週週任務獎勵</div>
+        <div class="card-text">開通後連續 <strong>8週</strong> 完成指定任務，最高可獲 <strong style="color:#06C167;">NT$19,100</strong>。第3週起台北市指定行政區有更高額加碼！</div>
+      </div>
+      <div class="card" style="border-top:3px solid #06C167;">
+        <div class="card-icon green" style="font-size:1.5rem;">🏆</div>
+        <div class="card-title">馬拉松挑戰賽</div>
+        <div class="card-text">第一階段結束後，<strong>30天內</strong>於台北市完成 <strong>120 趟行程</strong>，再加碼 <strong style="color:#06C167;">NT$6,000</strong>！</div>
+      </div>
+      <div class="card" style="border-top:3px solid #5de3a6;">
+        <div class="card-icon green" style="font-size:1.5rem;">⚡</div>
+        <div class="card-title">Surge 動態加成</div>
+        <div class="card-text">以上獎勵之外，餐期尖峰時段還有 Surge 加成。台北市在用餐時段訂單密集，是全台最高效的接單區域。</div>
+      </div>
+    </div>
+
+    <!-- 其他常態獎勵 -->
+    <h3 style="font-size:1.1rem; font-weight:800; margin-bottom:16px;">💰 其他常態獎金機制</h3>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon green">🌧️</div>
+        <div class="card-title">惡劣天氣加成</div>
+        <div class="card-text">下雨天訂單量暴增，平台提供額外天氣加成。雨天出門送餐，是賺錢的最佳時機。</div>
+      </div>
+      <div class="card">
+        <div class="card-icon green">👥</div>
+        <div class="card-title">推薦好友獎勵</div>
+        <div class="card-text">推薦 1 位好友加入，最高可得 <strong>NT$12,000</strong>！推薦多人還有額外加碼最高 NT$5,600。</div>
+      </div>
+      <div class="card">
+        <div class="card-icon green">🎯</div>
+        <div class="card-title">常態任務獎勵</div>
+        <div class="card-text">App 內定期出現任務挑戰，完成即可獲得額外獎金，是新手期補充收入的重要來源。</div>
+      </div>
+    </div>
+
+    <div class="info-box tip" style="margin-top:24px;">
+      <div class="info-box-icon">💡</div>
+      <div class="info-box-text"><strong>新手建議：</strong>如果住在雙北或方便前往台北市接單，3月是加入的最佳時機！週週任務 8 週下來最高 NT$19,100，加上馬拉松獎勵 NT$6,000，光獎金就有 NT$25,100，相當划算。</div>
+    </div>
+
+    <div class="referral-banner" style="margin-top:32px; background:linear-gradient(135deg,#06C167,#5de3a6);">
+      <h3>🟢 3月限定！現在申請最高賺 NT$25,100</h3>
+      <p>使用推薦碼申請，享有最新新手開通獎勵。活動至 2026/3/31，不要錯過！</p>
+      <a href="https://www.uber.com/signup/drive/deliver/?invite_code=zjgzrvuzdhum" target="_blank" class="btn">
+        立即用推薦碼申請 →
+      </a>
+      <div class="referral-code">推薦碼：zjgzrvuzdhum</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="section" id="faq" style="background:#fff;">
+  <div class="container">
+    <div class="section-title-block">
+      <div class="section-label">常見問題</div>
+      <h2 class="section-title">Uber Eats 新手最常問</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          一定要良民證才能申請嗎？沒有的話怎麼辦？
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          機車和腳踏車都需要良民證！官方要求提供<strong>三個月內核發</strong>的警察刑事紀錄證明書。<br><br>
+          沒有良民證的處理方式：<ul>
+            <li>先去辦良民證（每份 NT$100，約 2 個工作天可取件）</li>
+            <li>辦好後再提交文件申請</li>
+          </ul>
+          <a href="goodbehavior.html" style="color:#06C167; font-weight:700;">→ 點這裡看良民證完整辦理流程</a>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Uber Eats 的收入怎麼結算？什麼時候入帳？
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          Uber Eats 採<strong>每週結算一次</strong>，結算週期為週一至週日，通常於次週入帳。<br><br>
+          查看收入：<ul>
+            <li>開啟 Uber Driver App</li>
+            <li>點選「收入」查看本週、歷史明細</li>
+            <li>可查看每單明細，包含基本費、Surge 加成、Quests 獎金</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Uber Eats 的評分怎麼維持？低評分有什麼後果？
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          Uber Eats 使用 5 星評分系統，顧客每次送達後可選擇評分。<br><br>
+          提升評分技巧：<ul>
+            <li>準時送達（最重要）</li>
+            <li>確保包裝完整，食物不翻倒</li>
+            <li>遇到問題主動透過 App 告知顧客</li>
+            <li>送達後按下「已送達」並可附上照片</li>
+          </ul>
+          評分若持續低於標準（通常是 4.7 以下），可能收到警告，嚴重時帳號暫停。但只要服務態度好，一般很難掉到危險分數。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Uber Eats 和 foodpanda 哪個賺比較多？
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          這個問題很難一概而論，取決於你的工作區域和時段：<ul>
+            <li><strong>Uber Eats</strong>：市區、尖峰時段、Surge 加成時收入可能更高，單筆金額通常較大</li>
+            <li><strong>foodpanda</strong>：訂單量通常更多，適合追求接單量的策略</li>
+          </ul>
+          <strong>最佳策略</strong>：兩個都申請，根據當天情況（哪個平台訂單量多、哪個有加成）選擇上線，可以最大化收入。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Uber Eats 背景審查（Background Check）查什麼？
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          Uber Eats 的背景審查主要包含：<ul>
+            <li>身份核實（比對身分證資料）</li>
+            <li>犯罪紀錄查核（這就是需要良民證的原因）</li>
+            <li>駕駛紀錄查核（機車/汽車）</li>
+          </ul>
+          一般沒有重大犯罪紀錄的人都能通過。整個背景審查約需 3–7 個工作天。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          可以選擇只接特定類型的訂單嗎（例如只接短途）？
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          Uber Eats 沒有直接讓你只接短途或長途的篩選功能，但你可以：<ul>
+            <li>收到訂單時查看地圖，若距離太遠可選擇不接（但會影響接單率）</li>
+            <li>在訂單密集的市區待命，自然會以較短距離訂單為主</li>
+            <li>設定自己的「結束點」（Destination Filter），App 會優先分配往那個方向的訂單</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Uber Eats 有提供保險嗎？意外怎麼辦？
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          Uber Eats 在<strong>接單狀態下</strong>提供意外保險，涵蓋範圍包括：<ul>
+            <li>接單途中的人身意外</li>
+            <li>特定情況下的車輛損壞</li>
+          </ul>
+          <strong>注意：</strong>保險在「離線狀態」（未接單）不生效。建議同時為自己投保個人意外險，提供更完整的保障。遇到事故後，除了報警，也要透過 Uber 平台回報事故以啟動保險流程。
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text"><img src="images/hero-scooter.svg" alt="" class="logo-icon-img" /> 外送新手村</div>
+        <p>台灣最完整的外送平台新手指南，幫助你快速上手 foodpanda 和 Uber Eats。</p>
+      </div>
+      <div class="footer-col">
+        <h4>Uber Eats 指南</h4>
+        <ul>
+          <li><a href="#flow">申請流程</a></li>
+          <li><a href="#docs">所需文件</a></li>
+          <li><a href="#training">培訓重點</a></li>
+          <li><a href="#calculator">收入試算</a></li>
+          <li><a href="#faq">常見問題</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>其他指南</h4>
+        <ul>
+          <li><a href="foodpanda.html">foodpanda 指南</a></li>
+          <li><a href="goodbehavior.html">良民證申請</a></li>
+          <li><a href="equipment.html">外送設備推薦</a></li>
+          <li><a href="index.html#compare">平台比較</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>立即申請</h4>
+        <ul>
+          <li><a href="https://to.foodpanda.com/a/7eansg5" target="_blank">🐼 foodpanda 申請</a></li>
+          <li><a href="https://www.uber.com/signup/drive/deliver/?invite_code=zjgzrvuzdhum" target="_blank">🟢 Uber Eats 申請</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 外送新手村</div>
+      <div class="disclaimer">本站資訊僅供參考，平台政策可能隨時調整，請以 Uber Eats 官方公告為準。</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+$(function(){
+  var $hr=$('#ue-hours'), $hv=$('#ue-hours-val');
+  var $or=$('#ue-orders'), $ov=$('#ue-orders-val');
+  $hr.on('input',function(){ $hv.text($(this).val()+' 小時'); });
+  $or.on('input',function(){ $ov.text($(this).val()+' 單'); });
+
+  $('#ue-calc-btn').on('click',function(){
+    var h=parseFloat($hr.val())||0;
+    var o=parseFloat($or.val())||0;
+    var f=parseFloat($('#ue-avg-fee').val())||0;
+    var b=parseFloat($('#ue-boost').val())||0;
+    if(!f){ alert('請輸入平均每單外送費！'); return; }
+    var wo=h*o;
+    var wi=wo*f*(1+b/100);
+    var mi=wi*4.3;
+    var ai=mi*12;
+    $('#ue-weekly-orders').text(Math.round(wo)+' 單');
+    $('#ue-weekly-income').text('$'+Math.round(wi).toLocaleString());
+    $('#ue-monthly-income').text('NT$'+Math.round(mi).toLocaleString());
+    $('#ue-annual-note').text('年收入約 NT$'+Math.round(ai).toLocaleString());
+    $('#ue-result').fadeIn(300);
+  });
+});
+</script>
+</body>
+</html>

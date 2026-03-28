@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>外送新手村 — 從零開始，輕鬆接單</title>
+  <meta name="description" content="外送新手村提供完整的台灣外送平台入門指南，包括 foodpanda、Uber Eats 詳細比較、新手流程、收入試算，幫你快速上手外送工作。" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/hero-scooter.svg" alt="" class="logo-icon-img" /> 外送新手村
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="選單">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="active">首頁</a></li>
+      <li><a href="#compare">平台比較</a></li>
+      <li><a href="foodpanda.html">🐼 foodpanda</a></li>
+      <li><a href="ubereats.html">🟢 Uber Eats</a></li>
+      <li><a href="goodbehavior.html">📋 良民證</a></li>
+      <li><a href="equipment.html">🎒 外送設備</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="container">
+    <div class="d-flex gap-24 align-center hero-layout" style="gap:60px; flex-wrap:wrap; justify-content:space-between;">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🎉</span> 台灣最完整外送新手指南
+        </div>
+        <h1>從零開始<br><span class="highlight">輕鬆接單</span></h1>
+        <p>不管你是第一次聽說外送平台，還是剛決定要試試看，這裡提供你所需的一切：平台比較、詳細流程、收入試算，讓你少走冤枉路。</p>
+        <div class="hero-actions">
+          <a href="foodpanda.html" class="btn btn-primary btn-lg">
+            🐼 foodpanda 新手指南
+          </a>
+          <a href="ubereats.html" class="btn btn-outline btn-lg">
+            🟢 Uber Eats 新手指南
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num">2</div>
+            <div class="label">主流平台比較</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">6</div>
+            <div class="label">詳細註冊步驟</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">20+</div>
+            <div class="label">常見問題解答</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num">免費</div>
+            <div class="label">完全免費閱讀</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-inner"><img src="images/hero-scooter.svg" alt="外送機車插圖" style="width:100%;height:100%;object-fit:contain;" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== QUICK OVERVIEW ========== -->
+<section class="section-sm" style="background:#fff;">
+  <div class="container">
+    <div class="grid-4">
+      <div class="card" style="text-align:center; padding:24px 20px;">
+        <div style="font-size:2rem; margin-bottom:12px;">📋</div>
+        <div class="card-title">平台比較</div>
+        <div class="card-text">一張表格搞懂 foodpanda 和 Uber Eats 的差異</div>
+        <a href="#compare" class="btn btn-sm" style="margin-top:14px; background:var(--pink-lighter); color:var(--pink);">查看比較</a>
+      </div>
+      <div class="card" style="text-align:center; padding:24px 20px;">
+        <div style="font-size:2rem; margin-bottom:12px;">🗺️</div>
+        <div class="card-title">新手流程</div>
+        <div class="card-text">從申請到第一筆收入，完整步驟圖解</div>
+        <a href="foodpanda.html#flow" class="btn btn-sm" style="margin-top:14px; background:var(--pink-lighter); color:var(--pink);">查看流程</a>
+      </div>
+      <div class="card" style="text-align:center; padding:24px 20px;">
+        <div style="font-size:2rem; margin-bottom:12px;">💰</div>
+        <div class="card-title">收入試算</div>
+        <div class="card-text">輸入工時，馬上算出你的預估月收入</div>
+        <a href="foodpanda.html#calculator" class="btn btn-sm" style="margin-top:14px; background:var(--pink-lighter); color:var(--pink);">開始試算</a>
+      </div>
+      <div class="card" style="text-align:center; padding:24px 20px;">
+        <div style="font-size:2rem; margin-bottom:12px;">❓</div>
+        <div class="card-title">常見問題</div>
+        <div class="card-text">新手最常問的問題，一次解答清楚</div>
+        <a href="foodpanda.html#faq" class="btn btn-sm" style="margin-top:14px; background:var(--pink-lighter); color:var(--pink);">查看FAQ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PLATFORM COMPARE ========== -->
+<section class="section" id="compare" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-title-block center">
+      <div class="section-label">平台比較</div>
+      <h2 class="section-title">選哪個平台適合你？</h2>
+      <p class="section-subtitle">foodpanda 和 Uber Eats 各有優缺點，以下一次比較清楚，幫你做出最好的選擇。</p>
+    </div>
+
+    <div class="info-box pink" style="margin-bottom:28px;">
+      <div class="info-box-icon">💡</div>
+      <div class="info-box-text">
+        <strong>建議新手兩個都申請！</strong>可以雙平台接單，提高收入來源，天氣不好或某平台訂單少時也可以切換。兩個平台的基本門檻都不高，申請不需費用。
+      </div>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th style="width:180px;">比較項目</th>
+            <th class="col-fp">🐼 foodpanda</th>
+            <th class="col-ue">🟢 Uber Eats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>外送費結構</td>
+            <td>依距離分級計費，最低約 $35/單，尖峰時段有加成</td>
+            <td>依距離分級計費，市區約 $40–80/單，尖峰加成明顯</td>
+          </tr>
+          <tr>
+            <td>良民證需求</td>
+            <td><span class="compare-badge badge-pink">★ 需要</span><br><small style="color:#999;">部分地區可先開通後補</small></td>
+            <td><span class="compare-badge badge-pink">★ 需要</span><br><small style="color:#999;">機車＆腳踏車皆需要</small></td>
+          </tr>
+          <tr>
+            <td>支援車種</td>
+            <td>普通/大型重型機車</td>
+            <td>腳踏車、機車、汽車</td>
+          </tr>
+          <tr>
+            <td>申請門檻</td>
+            <td>線上測驗 + 合約簽署</td>
+            <td>四大課程 + 線上測驗（須達90%）+ 背景審查</td>
+          </tr>
+          <tr>
+            <td>付款週期</td>
+            <td>雙週入帳<br><small style="color:#999;">指定 6 家銀行</small></td>
+            <td>每週入帳<br><small style="color:#999;">銀行轉帳</small></td>
+          </tr>
+          <tr>
+            <td>接單彈性</td>
+            <td>隨時上線/下線，無排班需求</td>
+            <td>隨時上線/下線，無排班需求</td>
+          </tr>
+          <tr>
+            <td>保險保障</td>
+            <td>接單期間有意外保險</td>
+            <td>接單期間有意外保險</td>
+          </tr>
+          <tr>
+            <td>裝備</td>
+            <td>需購買官方裝備<br><small style="color:#999;">現有 0 元裝備活動（北基桃竹/苗栗）</small></td>
+            <td>需自行購買保溫袋<br><small style="color:#999;">平台不提供</small></td>
+          </tr>
+          <tr>
+            <td>新手獎勵</td>
+            <td>🔥 北基桃竹：0元裝備＋<strong>$3,000任務獎金</strong><br>苗栗：0元裝備<br><small style="color:#999;">活動至 2026/3/30</small></td>
+            <td>🔥 雙北最高 <strong>NT$25,100</strong><br>桃竹苗/台中/高屏最高 NT$10,100<br><small style="color:#999;">3月限定活動至 2026/3/31</small></td>
+          </tr>
+          <tr>
+            <td>客服方式</td>
+            <td>App 內聊天客服、電話</td>
+            <td>App 內客服、幫助中心</td>
+          </tr>
+          <tr>
+            <td>適合族群</td>
+            <td><span class="compare-badge badge-pink">完全新手首選</span></td>
+            <td><span class="compare-badge badge-grey">適合喜歡高單價市場</span></td>
+          </tr>
+          <tr>
+            <td>立即申請</td>
+            <td><a href="https://to.foodpanda.com/a/7eansg5" target="_blank" class="btn btn-primary btn-sm">🐼 點此申請</a></td>
+            <td><a href="https://www.uber.com/signup/drive/deliver/?invite_code=zjgzrvuzdhum" target="_blank" class="btn btn-green btn-sm">🟢 點此申請</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PLATFORM CARDS ========== -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-title-block center">
+      <div class="section-label">深入瞭解</div>
+      <h2 class="section-title">選好平台，開始深入研究</h2>
+    </div>
+    <div class="platform-cards">
+      <div class="platform-card fp">
+        <div>
+          <div class="pc-logo">🐼 foodpanda</div>
+          <h3>完整新手指南</h3>
+          <p>從申請流程、測驗題庫、到收入試算，一站式搞定 foodpanda 外送入門</p>
+          <div style="margin-bottom:16px;">
+            <div style="font-size:.82rem; opacity:.8; margin-bottom:6px;">包含以下內容：</div>
+            <div style="font-size:.85rem; opacity:.9;">✓ 6步驟申請流程圖解<br>✓ 新手測驗題庫解析<br>✓ 互動式收入試算機<br>✓ 新手常見問題FAQ</div>
+          </div>
+        </div>
+        <a href="foodpanda.html" class="btn">查看完整指南 →</a>
+        <div class="pc-bg-text">🐼</div>
+      </div>
+      <div class="platform-card ue">
+        <div>
+          <div class="pc-logo">🟢 Uber Eats</div>
+          <h3>完整新手指南</h3>
+          <p>良民證申請、培訓流程、獎勵機制，讓你快速通過 Uber Eats 審核開始接單</p>
+          <div style="margin-bottom:16px;">
+            <div style="font-size:.82rem; opacity:.8; margin-bottom:6px;">包含以下內容：</div>
+            <div style="font-size:.85rem; opacity:.9;">✓ 6步驟申請流程圖解<br>✓ 新手培訓重點整理<br>✓ 互動式收入試算機<br>✓ 新手常見問題FAQ</div>
+          </div>
+        </div>
+        <a href="ubereats.html" class="btn">查看完整指南 →</a>
+        <div class="pc-bg-text">🚗</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== OTHER GUIDES ========== -->
+<section class="section" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-title-block center">
+      <div class="section-label">更多資源</div>
+      <h2 class="section-title">新手必看的其他指南</h2>
+    </div>
+    <div class="grid-2">
+      <!-- 良民證 -->
+      <div class="card" style="display:flex; gap:20px; align-items:flex-start;">
+        <div class="card-icon" style="font-size:1.8rem; width:60px; height:60px;">📋</div>
+        <div>
+          <div class="card-title" style="font-size:1.1rem;">良民證怎麼辦？</div>
+          <div class="card-text" style="margin-bottom:14px;">申請 Uber Eats 機車/汽車外送員必須提供良民證（警察刑事紀錄證明書）。完全免費，最快當天取得，步驟比你想的簡單！</div>
+          <a href="goodbehavior.html" class="btn btn-outline btn-sm">查看申請指南</a>
+        </div>
+      </div>
+      <!-- 外送設備 -->
+      <div class="card" style="display:flex; gap:20px; align-items:flex-start;">
+        <div class="card-icon" style="font-size:1.8rem; width:60px; height:60px;">🎒</div>
+        <div>
+          <div class="card-title" style="font-size:1.1rem;">外送員必備設備推薦</div>
+          <div class="card-text" style="margin-bottom:14px;">從手機架、藍牙耳機到隨身打氣機，哪些設備是必備，哪些是加分？包含實際使用心得影片！</div>
+          <a href="equipment.html" class="btn btn-outline btn-sm">查看設備推薦</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== REFERRAL SECTION ========== -->
+<section class="section-sm" style="background:#fff;">
+  <div class="container">
+    <div class="grid-2" style="gap:20px;">
+      <div class="referral-banner" style="margin:0;">
+        <h3>🐼 立即加入 foodpanda</h3>
+        <p>使用推薦連結申請，享有新手獎勵金！完成首週任務即可獲得額外獎勵。</p>
+        <a href="https://to.foodpanda.com/a/7eansg5" target="_blank" class="btn">馬上申請 foodpanda →</a>
+        <div class="referral-code">推薦連結: to.foodpanda.com/a/7eansg5</div>
+      </div>
+      <div class="referral-banner green" style="margin:0;">
+        <h3>🟢 3月限定！最高 NT$25,100</h3>
+        <p>雙北地區新手最高 NT$25,100 開通獎勵，桃竹苗/台中/高屏也有 NT$10,100。活動至 2026/3/31！</p>
+        <a href="https://www.uber.com/signup/drive/deliver/?invite_code=zjgzrvuzdhum" target="_blank" class="btn">馬上申請 Uber Eats →</a>
+        <div class="referral-code">邀請碼: zjgzrvuzdhum</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHY DELIVER ========== -->
+<section class="section" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-title-block center">
+      <div class="section-label">為什麼選外送</div>
+      <h2 class="section-title">外送工作的優勢</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card" style="text-align:center;">
+        <div style="font-size:2.5rem; margin-bottom:16px;">⏰</div>
+        <div class="card-title">彈性工時</div>
+        <div class="card-text">沒有排班限制，完全自由決定上下班時間。想工作就開 App，想休息就關掉，適合兼職或全職。</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:2.5rem; margin-bottom:16px;">💸</div>
+        <div class="card-title">即時收入</div>
+        <div class="card-text">接一單賺一單，每週固定入帳。勤快的外送員每月可賺 3–5 萬，新手也能邊學邊賺。</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:2.5rem; margin-bottom:16px;">🏋️</div>
+        <div class="card-title">兼顧健康</div>
+        <div class="card-text">騎車外送是一種移動工作，不用久坐辦公室。在城市中穿梭，還可以認識各個有趣的角落。</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:2.5rem; margin-bottom:16px;">📱</div>
+        <div class="card-title">門檻低</div>
+        <div class="card-text">只要有車、有手機、通過基本審核就能開始。不需要特殊學歷或工作經驗，新手友善。</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:2.5rem; margin-bottom:16px;">🛡️</div>
+        <div class="card-title">有保險保障</div>
+        <div class="card-text">接單期間，foodpanda 和 Uber Eats 都有提供意外保險，讓你工作更有保障。</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div style="font-size:2.5rem; margin-bottom:16px;">🎯</div>
+        <div class="card-title">獎金豐厚</div>
+        <div class="card-text">尖峰時段加成、天氣加成、新手獎勵金、衝刺任務獎金，讓你的收入遠超基本外送費。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text"><img src="images/hero-scooter.svg" alt="" class="logo-icon-img" /> 外送新手村</div>
+        <p>台灣最完整的外送平台新手指南。幫助每一位想加入外送行列的人，快速上手、少走冤枉路。</p>
+      </div>
+      <div class="footer-col">
+        <h4>平台指南</h4>
+        <ul>
+          <li><a href="foodpanda.html">foodpanda 指南</a></li>
+          <li><a href="foodpanda.html#flow">新手流程</a></li>
+          <li><a href="foodpanda.html#exam">測驗題庫</a></li>
+          <li><a href="foodpanda.html#calculator">收入試算</a></li>
+          <li><a href="foodpanda.html#faq">常見問題</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Uber Eats</h4>
+        <ul>
+          <li><a href="ubereats.html">Uber Eats 指南</a></li>
+          <li><a href="ubereats.html#flow">新手流程</a></li>
+          <li><a href="ubereats.html#calculator">收入試算</a></li>
+          <li><a href="ubereats.html#faq">常見問題</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>更多資源</h4>
+        <ul>
+          <li><a href="goodbehavior.html">良民證申請</a></li>
+          <li><a href="equipment.html">外送設備推薦</a></li>
+          <li><a href="#compare">平台比較</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 外送新手村 · 外送員互助資源站</div>
+      <div class="disclaimer">本站為個人資訊整理，資訊僅供參考。平台政策可能隨時變動，請以各平台官方公告為準。本站部分連結為推薦連結，不影響您的申請費用。</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

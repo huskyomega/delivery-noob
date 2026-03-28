@@ -19,19 +19,6 @@ delivery-noob/
 └── images/             （目前為空，見下方圖片清單）
 ```
 
-## 需要替換的圖片
-
-以下 emoji 佔位符可替換為實際圖片：
-
-| 位置 | 目前呈現 | 建議替換 |
-|------|---------|---------|
-| 外送袋設備卡（equipment.html）| 🎒 emoji | 外送袋實拍照 |
-| 打氣機設備卡（equipment.html）| 💨 emoji | 打氣機實拍照 |
-| 行動電源設備卡（equipment.html）| 🔋 emoji | 行動電源實拍照 |
-| 手套設備卡（equipment.html）| 🧤 emoji | 騎車手套實拍照 |
-| 冰涼巾設備卡（equipment.html）| 🌞 emoji | 冰涼巾實拍照 |
-| 首頁 Hero 視覺（index.html）| 🛵 emoji | 外送員騎車照片 |
-
 ## 推薦連結
 
 - foodpanda：https://to.foodpanda.com/a/7eansg5

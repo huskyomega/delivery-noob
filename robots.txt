@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://huskyomega.github.io/delivery-noob/sitemap.xml

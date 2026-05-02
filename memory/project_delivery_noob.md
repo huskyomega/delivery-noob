@@ -10,7 +10,7 @@ type: project
 
 **How to apply:** 未來修改此網站時，注意推薦連結：
 - foodpanda: https://to.foodpanda.com/a/7eansg5
-- Uber Eats: https://www.uber.com/signup/drive/deliver/?invite_code=zjgzrvuzdhum
+- Uber Eats: https://www.uber.com/signup/drive/deliver/?invite_code=bwbtbja
 
 YouTube 影片連結（使用者本人的頻道）：
 - 減震手機架 https://youtu.be/9VBIlY16bbg
